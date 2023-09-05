@@ -1,0 +1,40 @@
+.pagination-btns-container{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.prev-btn, .next-btn{
+    background-color: #0D2D62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover{
+    background-color: #133e85;
+}
+
+@media only screen and (max-width:1050px){
+    .pagination-btns-container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .pagination-btns-container{
+        width: 90%;
+    }
+    .prev-btn, .next-btn{
+        font-size: 15px;
+        padding: 7px 7px;
+    }
+}

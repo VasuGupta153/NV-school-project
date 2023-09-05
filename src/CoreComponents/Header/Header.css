@@ -1,0 +1,156 @@
+.nav_container{
+    width: 90%;
+    margin: auto;
+}
+.navbar_fixed{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar_fixed1{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+} 
+
+.user-header{
+    height: 100px;
+    width: 100%;
+    background-color: #B80924;
+}
+
+.user-header1{
+    display: none;
+    height: 100px;
+    width: 100%;
+    background-color: #B80924;
+}
+
+.user-header img{
+    width: 500px;
+    margin: 0.5% auto auto 1%;
+}
+
+nav{
+    background-color: #0D2D62;
+}
+
+header ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+header ul li{
+    float: left;
+}
+
+header ul li .nav-link{
+    display: block;
+    text-decoration: none;
+    padding: 1vw 3.3vw;
+    color: white;
+    font-size: 1.3vw;
+    transition: 0.2s ease-out;
+}
+
+header ul li:nth-child(1) .nav-link{
+    margin-left: 1.3vw;
+}
+
+header ul li .nav-link:hover{
+    background-color: #113979;
+}
+
+@media only screen and (max-width: 1250px){
+    header ul li .nav-link{
+        font-size: 1.5vw;
+        padding: 1vw 3vw;
+    }
+    header ul li:nth-child(1) .nav-link{
+        margin-left: 1vw;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    header ul li .nav-link{
+        font-size: 1.8vw;
+        padding: 1vw 2.5vw;
+    }
+    header ul li:nth-child(1) .nav-link{
+        margin-left: 1.2vw;
+    }
+    .user-header{
+        height: 80px;
+        background-color: #B80924;
+    }
+    
+    .user-header img{
+        width: 400px;
+        margin: 0.7% auto auto 1%;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    nav{
+        display: none;
+    }
+    .user-header{
+        display: none;
+    }
+    .user-header1{
+        display: block;
+        height: 80px;
+    }
+    .user-header1 img{
+        width: 400px;
+        margin: 0.8% auto auto 1%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .user-header1 img{
+        width: 330px;
+        margin: 0.6% auto auto 1%;
+    }
+    .user-header1{
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .user-header1 img{
+        width: 320px;
+        margin: 0.8% auto auto 1%;
+    }
+    .user-header1{
+        background-color: #B80924;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .user-header1 img{
+        width: 300px;
+        margin: 1.3% auto auto 1%;
+    }
+    .user-header1{
+        /* height: 70px; */
+        background-color: #B80924;
+    }
+}
+
+@media only screen and (max-width: 355px){
+    .user-header1 img{
+        width: 270px;
+        margin: 0.6% auto auto 1%;
+    }
+    .user-header1{
+        height: 70px;
+        background-color: #B80924;
+    }
+}

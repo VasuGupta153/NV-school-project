@@ -1,0 +1,146 @@
+.admin-contact-us-outer-container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.admin-contact-us-inner-container{
+    font-size: 2em;
+    width: 250px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+}
+
+.map-heading-outer-container{
+    width: 80%;
+    margin: 20px auto;
+} 
+
+.map-heading-inner-container{
+    font-size: 2em;
+    width: 280px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2px;
+}
+
+.contact-container{
+    width: 80%;
+    margin: auto; 
+}
+
+.nv-recent-in-contact{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0D2D62;
+}
+
+.contact-address{
+    font-size: 1em;
+    width: 200px;
+    color: #B80924;
+}
+
+.email-and-phone span:first-child{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-and-phone span:nth-child(2){
+    font-size: 1.3em;
+    color: #B80924;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-and-phone{
+    margin: 10px 0 10px 0;
+}
+
+.map-container{
+    width: 80%;
+    margin: 20px auto 100px;
+    border: 5px solid gray;
+}
+
+@media only screen and (max-width:500px){
+    .admin-contact-us-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .admin-contact-us-inner-container{
+        font-size: 1.5em;
+        width: 150px;
+    }
+
+    .map-heading-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .map-heading-inner-container{
+        font-size: 1.5em;
+        width: 250px;
+    }
+    
+    .contact-container{
+        width: 90%;
+    }
+    
+    .nv-recent-in-contact{
+        font-size: 1.4em;
+    }
+    
+    .contact-address{
+        font-size: 0.8em;
+        width: 180px;
+    }
+    
+    .email-and-phone span:first-child{
+        font-size: 1em;
+    }
+    
+    .email-and-phone span:nth-child(2){
+        font-size: 1em;
+    }
+    
+    .email-and-phone{
+        margin: 10px 0 10px 0;
+    }
+    .map-container{
+        width: 90%;
+    }
+}
+
+/* add btn--------------------------- */
+
+.update-contact-btn{
+    padding: 10px 15px;
+    background-color: #06ca10;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1em;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.update-contact-btn:hover{
+    background-color: #05b30e;
+}
+@media only screen and (max-width:600px){
+    .update-contact-btn{
+        /* width: 90px; */
+        font-size: 0.9em;
+        margin: 10px 0 0 0;
+        padding: 8px 10px;
+        width: fit-content;
+    }
+    .admin-contact-us-outer-container{
+        display: block;
+    }
+}

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.quote-notice-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+@media only screen and (max-width: 500px){
+    .quote-notice-container{
+        width: 93%;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,154 @@
+.image-slider-photos-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.image-slider-photos-container .each-photo-container img{
+    width: 100%;
+    height: 100%;
+}
+.image-slider-photos-container .each-photo-container{
+    position: relative;
+}
+.image-slider-photos-container .each-photo-container div{
+    background-color: #B80924;
+    font-size: 30px;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    border-bottom-left-radius: 5px;
+}
+.image-slider-photos-container .each-photo-container div:hover{
+    background-color: #96051b;
+}
+.delete-confirmation{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.delete-btn, .cancel-btn{
+    background-color: #B80924;
+    width: 70px;
+    text-align: center;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.delete-btn:hover, .cancel-btn:hover{
+    background-color: #96051b;
+}
+@media only screen and (max-width:1050px){
+    .image-slider-photos-container{
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+        grid-row-gap: 20px;
+    }
+}
+@media only screen and (max-width:850px){
+    .image-slider-photos-container{
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+    }
+}
+@media only screen and (max-width:500px){
+    .image-slider-photos-container{
+        width: 90%;
+    }
+    .delete-confirmation{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.manage-footer-slider-outer-container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-add-photo-btn{
+    width: 80px;
+    padding: 10px;
+    background-color: #06ca10;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-add-photo-btn:hover{
+    background-color: #05b30e;
+}
+
+.manage-footer-slider-inner-container{
+    font-size: 2em;
+    width: 420px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width:550px){
+    .manage-footer-slider-outer-container{
+        display: block;
+    }
+    .footer-add-photo-btn{
+        width: 80px;
+        margin: 10px auto 10px 0;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .manage-footer-slider-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .manage-footer-slider-inner-container{
+        font-size: 1.2em;
+        width: 300px;
+    }
+    .footer-add-photo-btn{
+        width: 72px;
+        margin: 10px auto 10px 0;
+        font-size: 14px;
+        padding: 8px;
+    }
+}

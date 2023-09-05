@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.principal-container{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inner-principal-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-gap: 5%;
+}
+
+.principal-image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.message-heading-outer-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.message-heading-container{
+    font-size: 2.3vw;
+    width: 30vw;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+
+.message-container{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.2vw;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(99, 99, 99);
+} 
+
+.message-container span{
+    font-size: 1vw;
+}
+
+@media only screen and (max-width:950px){
+    .principal-container{
+        width: 100%;
+        background-color: #f1f1f1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .inner-principal-container{
+        width: 80%;
+        margin: 0px auto 30px auto;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .message-heading-outer-container{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .message-heading-container{
+        font-size: 1.8em;
+        width: 370px;
+        color: #B80924;
+        border-bottom: 1px solid grey;
+        padding-bottom: 5px;
+    }
+    
+    .message-container{
+        margin-top: 0px;
+        text-align: justify;
+        font-size: 0.8em;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(99, 99, 99);
+    }
+    
+    .message-container span{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .message-heading-container{
+        font-size: 1.3em;
+        width: 310px;
+    }
+    .message-heading-outer-container{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .inner-principal-container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 40px;
+    }
+    .message-container{
+        color: rgb(99, 99, 99);
+    }
+}
+
+@media only screen and (max-width:500px){
+    .message-heading-container{
+        font-size: 1.2em;
+        width: 260px;
+    }
+}

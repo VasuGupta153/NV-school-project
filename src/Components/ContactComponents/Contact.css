@@ -1,0 +1,121 @@
+.contact-us-outer-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.contact-us-inner-container{
+    font-size: 2em;
+    width: 250px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+}
+
+.map-heading-outer-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.map-heading-inner-container{
+    font-size: 2em;
+    width: 280px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2px;
+}
+
+.contact-container{
+    width: 80%;
+    margin: auto; 
+}
+
+.nv-recent-in-contact{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0D2D62;
+}
+
+.contact-address{
+    font-size: 1em;
+    width: 200px;
+    color: #B80924;
+}
+
+.email-and-phone span:first-child{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-and-phone span:nth-child(2){
+    font-size: 1.3em;
+    color: #B80924;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-and-phone{
+    margin: 10px 0 10px 0;
+}
+
+.map-container{
+    width: 80%;
+    margin: 20px auto 100px;
+    border: 5px solid gray;
+}
+/* 
+@media only screen and (max-width:1000px){
+    .map-container{
+        width: 80%;
+        height: 400px;
+        margin: 20px auto;
+    }
+} */
+
+@media only screen and (max-width:500px){
+    .contact-us-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .contact-us-inner-container{
+        font-size: 1.5em;
+        width: 150px;
+    }
+
+    .map-heading-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .map-heading-inner-container{
+        font-size: 1.5em;
+        width: 250px;
+    }
+    
+    .contact-container{
+        width: 90%;
+    }
+    
+    .nv-recent-in-contact{
+        font-size: 1.4em;
+    }
+    
+    .contact-address{
+        font-size: 0.8em;
+        width: 180px;
+    }
+    
+    .email-and-phone span:first-child{
+        font-size: 1em;
+    }
+    
+    .email-and-phone span:nth-child(2){
+        font-size: 1em;
+    }
+    
+    .email-and-phone{
+        margin: 10px 0 10px 0;
+    }
+    .map-container{
+        width: 90%;
+    }
+}

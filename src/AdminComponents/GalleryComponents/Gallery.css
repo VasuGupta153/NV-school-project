@@ -1,0 +1,100 @@
+.admin-gallery-heading-container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.admin-gallery-heading{
+    width: 200px;
+    border-bottom: 1px solid grey;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.admin-gallery-heading h2{
+    color: #B80924;
+    margin: 0 0 5px 0; 
+    font-size: 2em;
+} 
+
+@media only screen and (max-width: 950px){
+    .admin-gallery-heading h2{
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .admin-gallery-heading-container{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .admin-gallery-heading-container{
+        margin: 10px auto 0 auto;
+        width: 93%;
+    }
+    .admin-gallery-heading h2{
+        font-size: 1.6em;
+    }
+    .admin-gallery-heading{
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .admin-gallery-heading-container{
+        margin: 5px auto 0 auto;
+    }
+    .admin-gallery-heading h2{
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
+    .admin-gallery-heading{
+        width: 130px;
+    }
+}
+
+
+/* add btn--------------------------- */
+
+.gallery-add-btns-container{
+    display: flex;
+}
+
+.add-album-btn, .add-album-photo-btn, .add-album-video-btn{
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #06ca10;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1em;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.add-album-btn:hover, .add-album-photo-btn:hover, .add-album-video-btn:hover{
+    background-color: #05b30e;
+}
+@media only screen and (max-width:750px){
+    .add-album-btn, .add-album-photo-btn, .add-album-video-btn{
+        width: 90px;
+        font-size: 0.9em;
+        margin: 10px 10px 0 0;
+        padding: 8px 10px;
+    }
+}
+@media only screen and (max-width:400px){
+    .add-album-photo-btn, .add-album-video-btn{
+        width: 21.5vw;
+        font-size: 4vw;
+    }
+    .add-album-btn{
+        width: 26vw;
+        font-size: 4vw;
+
+    }
+}

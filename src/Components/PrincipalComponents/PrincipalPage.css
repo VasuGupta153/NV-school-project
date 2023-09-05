@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#principal, #designation{
+    color: #113979;
+}
+
+#designation{
+    margin-top: 0;
+}
+
+.principal-page-container{
+    background-color: #f1f1f1;
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.principal-page-container p{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(99, 99, 99);
+}
+
+.principal-page-image-container{
+    text-align: center;
+}
+
+.principal-page-image-container img{
+    width: 400px;
+}
+
+.principal-page-heading-outer-container{
+    width: 80%;
+    margin: auto;
+}
+
+.principal-page-heading-inner-container{
+    width: 420px;
+    border-bottom: 1px solid grey;
+}
+
+.principal-page-heading-inner-container h2{
+    color: #B80924;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1250px){
+    .principal-page-heading-inner-container h2{
+        font-size: 1.8em;
+    }
+    .principal-page-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .principal-page-heading-inner-container h2{
+        font-size: 1.6em;
+    }
+    .principal-page-heading-inner-container{
+        width: 320px;
+    }
+    .principal-page-image-container img{
+        width: 250px;
+    }
+    .principal-page-container p{
+        font-size: 0.8em;
+        margin-top: 0px;
+    }
+    #principal{
+        margin-top: 10px;
+    }
+    .principal-page-container{
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .principal-page-heading-outer-container{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .principal-page-heading-inner-container h2{
+        font-size: 1.2em;
+    }
+    .principal-page-heading-inner-container{
+        width: 260px;
+    }
+    .principal-page-image-container{
+        padding: 15px;
+    }
+    .principal-page-image-container img{
+        width: 100%;
+    }
+    .principal-page-container{
+        width: 90%;
+        margin: 10px auto;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .principal-page-heading-outer-container{
+        width: 90%;
+    }
+}

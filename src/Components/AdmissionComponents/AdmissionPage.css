@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.admission-outer-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.admission-inner-container{
+    font-size: 2em;
+    width: 180px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+}
+
+.admission-body-container{
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.admission-body-container h1, 
+.admission-body-container h2,
+.admission-body-container h3,
+.admission-body-container h4,
+.admission-body-container h5,
+.admission-body-container h6{
+    margin: 10px 0px 5px 0px;
+}
+
+.admission-body-container ul{
+    margin: 0;
+    padding-left: 25px;
+}
+
+.admission-body-container ul li{
+    margin-bottom: 3px;
+}
+
+@media only screen and (max-width:500px){
+    .admission-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .admission-inner-container{
+        font-size: 1.5em;
+        width: 150px;
+    }
+
+    .admission-body-container{
+        width: 90%;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+    }
+}

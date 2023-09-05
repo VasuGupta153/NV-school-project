@@ -1,0 +1,60 @@
+.album-card-container img{
+    height: 100%;
+    width: 100%;
+}
+.gallery-albums-container{
+    display: grid;
+    grid-template-columns: 32% 32% 32% ;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.album-card-title{
+    background-color: #B80924;
+    width: 100%;
+    margin-top: -5%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    position: relative;
+    color: white;
+    font-size: 1.4vw;
+}
+
+.album-title-container{
+    box-shadow: 0px 0px 8px black;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+
+}
+
+.album-title-container:hover{
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width:750px){
+    .gallery-albums-container{
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+        grid-row-gap: 20px;
+    }
+    .album-card-title{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:500px){
+    .gallery-albums-container{
+        grid-template-columns: auto ;
+        grid-gap: 15px;
+        width: 93%;
+        margin-top: 15px;
+    }
+    .album-card-title{
+        font-size: 16px;
+    }
+}

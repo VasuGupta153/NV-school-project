@@ -1,0 +1,253 @@
+.staff-card img{
+    height: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+.staff-card{
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.staff-card-description{
+    background-color: #0D2D62;
+    width: 100%;
+    margin-top: -1.2%;
+    height: 70px;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    padding: 10px 0 10px;
+}
+
+.staff-card-description  .staff-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.staff-card-description .staff-description{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+.staff-photo-description-container:hover{
+    transform: translateY(-70px);
+    cursor: pointer;
+}
+
+.staff-photo-description-container{
+    transition: 0.3s ease-out;
+}
+
+.staff-update-delete-btn-container{
+    position: absolute;
+    top: 0;
+}
+
+#delete-btn-staff{
+    background-color :#96051b ;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#delete-btn-staff:hover{
+    background-color: #B80924;
+}
+
+#update-btn-staff{
+    background-color: #0D2D62;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    display: inline-block; 
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    font-weight: 600;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#update-btn-staff:hover{
+    background-color: #113a7c;
+}
+
+@media only screen and (max-width: 1400px){
+    .staff-card img{
+        height: 300px;
+    }
+    
+    .staff-card{
+        height: 300px;
+    }
+    
+    .staff-card-description{
+        height: 60px;
+        padding: 10px 0 10px;
+        margin-top: -1.4%;
+    }
+    
+    .staff-card-description  .staff-name{
+        font-size: 1.2em;
+    }
+    
+    .staff-card-description .staff-description{
+        font-size: 0.9em;
+    }
+    
+    .staff-photo-description-container:hover{
+        transform: translateY(-60px);
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .staff-card img{
+        height: 440px;
+    }
+    
+    .staff-card{
+        height: 440px;
+    }
+    
+    .staff-card-description{
+        height: 60px;
+        padding: 10px 0 10px;
+        margin-top: -1%;
+    }
+    
+    .staff-card-description  .staff-name{
+        font-size: 1.2em;
+    }
+    
+    .staff-card-description .staff-description{
+        font-size: 0.9em;
+    }
+    
+    .staff-photo-description-container:hover{
+        transform: translateY(-60px);
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .staff-card img{
+        height: 400px;
+    }
+    
+    .staff-card{
+        height: 400px;
+    }
+
+    .staff-card-description{
+        margin-top: -1.2%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .staff-card img{
+        height: 350px;
+    }
+    
+    .staff-card{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .staff-card img{
+        height: 300px;
+    }
+    
+    .staff-card{
+        height: 300px;
+    }
+
+    .staff-card-description{
+        margin-top: -1.4%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .staff-card img{
+        height: 550px;
+    }
+    
+    .staff-card{
+        height: 550px;
+    }
+
+    .staff-card-description{
+        margin-top: -0.8%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .staff-card img{
+        height: 500px;
+    }
+    
+    .staff-card{
+        height: 500px;
+    }
+
+    .staff-card-description{
+        margin-top: -0.8%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .staff-card img{
+        height: 450px;
+    }
+    
+    .staff-card{
+        height: 450px;
+    }
+
+    .staff-card-description{
+        margin-top: -1%;
+    }
+
+    .staff-card-description  .staff-name{
+        font-size: 1em;
+    }
+    
+    .staff-card-description .staff-description{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 450px){
+    .staff-card img{
+        height: 400px;
+    }
+    
+    .staff-card{
+        height: 400px;
+    }
+
+    .staff-card-description{
+        margin-top: -1.2%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .staff-card img{
+        height: 350px;
+    }
+    
+    .staff-card{
+        height: 350px;
+    }
+
+    .staff-card-description{
+        margin-top: -1.2%;
+    }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.academic-outer-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.academic-inner-container{
+    font-size: 2em;
+    width: 170px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+}
+
+.academic-body-container{
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.academic-body-container h1, 
+.academic-body-container h2,
+.academic-body-container h3,
+.academic-body-container h4,
+.academic-body-container h5,
+.academic-body-container h6{
+    margin: 10px 0px 5px 0px;
+}
+
+.academic-body-container ul{
+    margin: 0;
+    padding-left: 25px;
+}
+
+.academic-body-container ul li{
+    margin-bottom: 3px;
+}
+
+@media only screen and (max-width:500px){
+    .academic-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .academic-inner-container{
+        font-size: 1.5em;
+        width: 140px;
+    }
+
+    .academic-body-container{
+        width: 90%;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+    }
+}

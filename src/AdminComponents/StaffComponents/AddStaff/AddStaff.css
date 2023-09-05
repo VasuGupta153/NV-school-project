@@ -1,0 +1,121 @@
+.add-staff-whole-container{
+    background-color: #e9eff3;
+}
+
+.add-staff-form-container{
+    width: 500px;
+    margin: 20px auto 10px;
+    background-color: white;
+    padding: 20px 20px 24px 20px;
+    box-sizing: border-box;
+}
+
+.add-staff-form-container textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 14px; 
+    color: #2e4453;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #c8d7e1;
+    background-color: #fff;
+    height: 150px;
+    margin-top: 5px;
+}
+ 
+.add-staff-form-container input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0 10px 0;
+    padding: 7px 14px;
+    color: #2e4453;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #c8d7e1;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.add-staff-form-container label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e4453;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.go-back-add-staff-page{
+    font-size: 14px;
+    font-weight: 600;
+    width: 500px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin: 0px auto 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.go-back-add-staff-page span{
+    cursor: pointer;
+}
+
+.add-staff-btn-inside{
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #06ca10;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.add-staff-btn-inside:hover{
+    background-color: #05b30e;
+}
+
+@media only screen and (max-width: 500px){
+    .add-staff-form-container{
+        width: 320px;
+        margin: 20px auto 10px;
+    }
+    .go-back-add-staff-page{
+        width: 320px;
+        margin: 0px auto 50px;
+    }
+    .add-staff-btn-inside{
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* heading-------------------- */
+
+.add-staff-outer-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.add-staff-inner-container{
+    font-size: 2em;
+    width: 250px;
+    color: #B80924;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+@media only screen and (max-width:500px){
+    .add-staff-outer-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .add-staff-inner-container{
+        font-size: 1.5em;
+        width: 150px;
+    }
+}
