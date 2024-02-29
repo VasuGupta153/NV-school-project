@@ -1,10 +1,10 @@
 import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
-import Home from "./Components/HomeComponents/Home"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/HomeComponents/Home";
 import Gallery from "./Components/GalleryComponents/Gallery";
 import PrincipalPage from "./Components/PrincipalComponents/PrincipalPage";
 import NoticePage from "./Components/NoticeComponents/NoticePage";
-import StaffPage from "./Components/StaffComponents/StaffPage"
+import StaffPage from "./Components/StaffComponents/StaffPage";
 import SingleStaff from "./Components/StaffComponents/SingleStaff/SingleStaff";
 import Contact from "./Components/ContactComponents/Contact";
 import AdmissionPage from "./Components/AdmissionComponents/AdmissionPage";
@@ -14,8 +14,7 @@ import UpdateAcademic from "./AdminComponents/AcademicComponents/UpdateAcademic/
 import UpdateAbout from "./AdminComponents/AboutUsComponents/UpdateAbout/UpdateAbout";
 import AboutUsPage from "./Components/AboutUsComponents/AboutUsPage";
 import AcademicPage from "./Components/AcademicComponents/AcademicPage";
-import LoginPage from "./AdminComponents/AuthComponents/LoginPage"
-import AdminRoute from "./AdminComponents/AuthComponents/helper/AdminRoutes"
+import LoginPage from "./AdminComponents/AuthComponents/LoginPage";
 import AdminHome from "./AdminComponents/HomeComponents/Home";
 import AdminNoticePage from "./AdminComponents/NoticeComponents/NoticePage";
 import AdminAdmissionPage from "./AdminComponents/AdmissionComponents/AdmissionPage";
@@ -23,7 +22,7 @@ import AdminGallery from "./AdminComponents/GalleryComponents/Gallery";
 import AdminPhotosPage from "./AdminComponents/GalleryComponents/PhotoAlbums/PhotosPage/PhotosPage";
 import AdminStaffPage from "./AdminComponents/StaffComponents/StaffPage";
 import AdminSingleStaff from "./AdminComponents/StaffComponents/SingleStaff/SingleStaff";
-import AdminContact from "./AdminComponents/ContactComponents/Contact"
+import AdminContact from "./AdminComponents/ContactComponents/Contact";
 import AdminAboutUsPage from "./AdminComponents/AboutUsComponents/AboutUsPage";
 import AdminAcademicPage from "./AdminComponents/AcademicComponents/AcademicPage";
 import AdminPrincipalPage from "./AdminComponents/PrincipalComponents/PrincipalPage";
@@ -45,56 +44,56 @@ import UpdateContact from "./AdminComponents/ContactComponents/UpdateContact/Upd
 import UpdateStaff from "./AdminComponents/StaffComponents/UpdateStaff/UpdateStaff";
 import AddStaff from "./AdminComponents/StaffComponents/AddStaff/AddStaff";
 
-const Routes = () => {
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/gallery" exact component={Gallery} />
-                <Route path="/principal" exact component={PrincipalPage} />
-                <Route path="/notices" exact component={NoticePage} />
-                <Route path="/staff" exact component={StaffPage} />
-                <Route path="/staff/:staffId" exact component={SingleStaff} />
-                <Route path="/contact" exact component={Contact} />
-                <Route path="/admission" exact component={AdmissionPage} />
-                <Route path="/about" exact component={AboutUsPage} />
-                <Route path="/academic" exact component={AcademicPage} />
-                <Route path="/gallery/:albumName/:albumId/photos" exact component={PhotosPage} />
-                <Route path="/login" exact component={LoginPage} />
-                <AdminRoute path="/admin" exact component={AdminHome} />
-                <AdminRoute path="/admin/notices" exact component={AdminNoticePage} />
-                <AdminRoute path="/admin/admission" exact component={AdminAdmissionPage} />
-                <AdminRoute path="/admin/gallery" exact component={AdminGallery} />
-                <AdminRoute path="/admin/gallery/:albumName/:albumId/photos" exact component={AdminPhotosPage} />
-                <AdminRoute path="/admin/staff" exact component={AdminStaffPage} />
-                <AdminRoute path="/admin/staff/:staffId" exact component={AdminSingleStaff} />
-                <AdminRoute path="/admin/contact" exact component={AdminContact} />
-                <AdminRoute path="/admin/about" exact component={AdminAboutUsPage} />
-                <AdminRoute path="/admin/academic" exact component={AdminAcademicPage} />
-                <AdminRoute path="/admin/principal" exact component={AdminPrincipalPage} />
-                <AdminRoute path="/admin/managesliderphotos" exact component={ManageImageSlider} />
-                <AdminRoute path="/admin/managesliderphotos/addphoto" exact component={AddPhoto} />
-                <AdminRoute path="/admin/managefootersliderphotos" exact component={ManageFooterImageSlider} />
-                <AdminRoute path="/admin/managefootersliderphotos/addphoto" exact component={AddFooterPhoto} />
-                <AdminRoute path="/admin/manageletsgetinspired" exact component={ManageLetsGetInspired} />
-                <AdminRoute path="/admin/letsgetinspired/create" exact component={AddQuote} />
-                <AdminRoute path="/admin/letsgetinspired/update/:letsgetinspiredId" exact component={UpdateLetsGetInspired} />
-                <AdminRoute path="/admin/notice/update/:noticeId" exact component={UpdateNotice} />
-                <AdminRoute path="/admin/notice/create" exact component={AddNotice} />
-                <AdminRoute path="/admin/principal/update/:principalId" exact component={UpdatePrincipal} />
-                <AdminRoute path="/admin/album/update/:albumId" exact component={UpdateAlbum} />
-                <AdminRoute path="/admin/album/create" exact component={AddAlbum} />
-                <AdminRoute path="/admin/photo/create" exact component={AddAlbumPhoto} />
-                <AdminRoute path="/admin/video/create" exact component={AddAlbumVideo} />
-                <AdminRoute path="/admin/contact/update/:contactId" exact component={UpdateContact} />
-                <AdminRoute path="/admin/staff/update/:staffId" exact component={UpdateStaff} />
-                <AdminRoute path="/admin/staffs/create" exact component={AddStaff} />
-                <AdminRoute path="/admin/admission/update" exact component={UpdateAdmission} />
-                <AdminRoute path="/admin/academic/update" exact component={UpdateAcademic} />
-                <AdminRoute path="/admin/about/update" exact component={UpdateAbout} />
-            </Switch>
-        </BrowserRouter>
-    )
-}
- 
-export default Routes;
+const MyRoutes = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/principal" element={<PrincipalPage />} />
+        <Route path="/notices" element={<NoticePage />} />
+        <Route path="/staff" element={<StaffPage />} />
+        <Route path="/staff/:staffId" element={<SingleStaff />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/admission" element={<AdmissionPage />} />
+        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/academic" element={<AcademicPage />} />
+        <Route path="/gallery/:albumName/:albumId/photos" element={<PhotosPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/admin/notices" element={<AdminNoticePage />} />
+        <Route path="/admin/admission" element={<AdminAdmissionPage />} />
+        <Route path="/admin/gallery" element={<AdminGallery />} />
+        <Route path="/admin/gallery/:albumName/:albumId/photos" element={<AdminPhotosPage />} />
+        <Route path="/admin/staff" element={<AdminStaffPage />} />
+        <Route path="/admin/staff/:staffId" element={<AdminSingleStaff />} />
+        <Route path="/admin/contact" element={<AdminContact />} />
+        <Route path="/admin/about" element={<AdminAboutUsPage />} />
+        <Route path="/admin/academic" element={<AdminAcademicPage />} />
+        <Route path="/admin/principal" element={<AdminPrincipalPage />} />
+        <Route path="/admin/managesliderphotos" element={<ManageImageSlider />} />
+        <Route path="/admin/managesliderphotos/addphoto" element={<AddPhoto />} />
+        <Route path="/admin/managefootersliderphotos" element={<ManageFooterImageSlider />} />
+        <Route path="/admin/managefootersliderphotos/addphoto" element={<AddFooterPhoto />} />
+        <Route path="/admin/manageletsgetinspired" element={<ManageLetsGetInspired />} />
+        <Route path="/admin/letsgetinspired/create" element={<AddQuote />} />
+        <Route path="/admin/letsgetinspired/update/:letsgetinspiredId" element={<UpdateLetsGetInspired />} />
+        <Route path="/admin/notice/update/:noticeId" element={<UpdateNotice />} />
+        <Route path="/admin/notice/create" element={<AddNotice />} />
+        <Route path="/admin/principal/update/:principalId" element={<UpdatePrincipal />} />
+        <Route path="/admin/album/update/:albumId" element={<UpdateAlbum />} />
+        <Route path="/admin/album/create" element={<AddAlbum />} />
+        <Route path="/admin/photo/create" element={<AddAlbumPhoto />} />
+        <Route path="/admin/video/create" element={<AddAlbumVideo />} />
+        <Route path="/admin/contact/update/:contactId" element={<UpdateContact />} />
+        <Route path="/admin/staff/update/:staffId" element={<UpdateStaff />} />
+        <Route path="/admin/staffs/create" element={<AddStaff />} />
+        <Route path="/admin/admission/update" element={<UpdateAdmission />} />
+        <Route path="/admin/academic/update" element={<UpdateAcademic />} />
+        <Route path="/admin/about/update" element={<UpdateAbout />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default MyRoutes;

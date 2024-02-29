@@ -3,7 +3,7 @@ import "./LoginPage.css"
 import Header from "../../CoreComponents/Header/Header"
 import Footer from "../../CoreComponents/Footer/Footer"
 import {signin, isAuthenticated, authenticate} from "./helper/authapis"
-import {Redirect} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import SyncLoader from "react-spinners/SyncLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,6 +12,7 @@ function LoginPage({history}) {
 
     const [eyeClass, setEyeClass] = useState("fas fa-eye-slash")
     const [passwordType, setPasswordType] = useState("password")
+    const navigate = useNavigate();
 
     const toggleClass = () => {
         if(eyeClass === "fas fa-eye-slash"){
@@ -61,9 +62,9 @@ function LoginPage({history}) {
       const performRedirect = () => {
         if(didRedirect){
           if(user){
-            return <Redirect to="/admin" />
+            return navigate("/admin")
           }else{
-            return <Redirect to="/" />
+            return navigate("/")
           }
         }
       }

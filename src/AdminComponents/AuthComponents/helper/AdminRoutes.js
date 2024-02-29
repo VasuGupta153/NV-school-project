@@ -1,5 +1,5 @@
 import React from "react"
-import {Route, Redirect} from "react-router-dom"
+import {Route, Navigate} from "react-router-dom"
 import {isAuthenticated} from "./authapis"
 
 const AdminRoute = ({ component: Component, ...rest }) => {
@@ -10,11 +10,12 @@ const AdminRoute = ({ component: Component, ...rest }) => {
           isAuthenticated() ? (
            <Component {...props} />
           ) : (
-            <Redirect
+            <Navigate
               to={{
                 pathname: "/login",
                 state: {from: props.location}
               }}
+              replace
             />
           )
         }
